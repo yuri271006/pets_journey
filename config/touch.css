@@ -1,0 +1,25 @@
+/* --- CHẶN TƯƠNG TÁC (NO COPY/SELECT) --- */
+* {
+    /* Không cho bôi đen text */
+    -webkit-user-select: none; /* Safari/Chrome */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE/Edge */
+    user-select: none;         /* Chuẩn */
+
+    /* Không hiện menu khi nhấn giữ trên iOS (Kính lúp/Menu copy) */
+    -webkit-touch-callout: none; 
+    
+    /* Tắt màu xanh highlight khi tap vào nút */
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Nếu game có ô nhập liệu (Input), phải cho phép chọn lại */
+input, textarea {
+    -webkit-user-select: text;
+    user-select: text;
+}
+
+/* Ngăn trình duyệt xử lý hành vi chạm (Cuộn/Zoom) trên toàn body */
+body {
+    touch-action: none; /* Cực kỳ quan trọng cho Game */
+}

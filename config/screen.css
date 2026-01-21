@@ -1,0 +1,79 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000;
+  font-family: "Inter", sans-serif;
+}
+
+/* 1. Container chính: Chứa nền game & Được JS Scale */
+#game-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* Mặc định căn giữa, JS sẽ ghi đè transform scale vào đây */
+  transform: translate(-50%, -50%);
+
+  width: 2796px;
+  height: 1290px;
+
+  /* Ảnh nền: Tràn viền (Cover cả tai thỏ) */
+  background: url("https://images7.alphacoders.com/592/592678.jpg") no-repeat center center;
+  background-size: cover;
+
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  visibility: hidden; /* Ẩn chờ JS tính toán */
+}
+
+/* 2. Vùng an toàn: Nằm đè lên Container */
+#safegame {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  /* QUAN TRỌNG: Thiết lập vùng đệm an toàn trong hệ tọa độ 2796x1290 */
+  /* Tai thỏ iPhone ~150px trong hệ tọa độ game này */
+  /* Ta để padding rộng rãi để UI không bị che */
+  padding: 40px 140px;
+
+  box-sizing: border-box;
+  /* Có thể bật border này lên để debug xem vùng an toàn */
+  /* border: 5px solid rgba(255, 0, 0, 0.5); */
+}
+
+/* Cảnh báo xoay màn hình */
+#rotate-warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f172a;
+  z-index: 9999;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+#rotate-warning i {
+  font-size: 50px;
+  margin-bottom: 20px;
+  animation: rotate 1.5s infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

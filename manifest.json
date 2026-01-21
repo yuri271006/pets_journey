@@ -1,0 +1,23 @@
+{
+  "name": "Hành Trình Thú Cưng",
+  "short_name": "Pets Journey",
+  "start_url": "app.php",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "description": "Pets Journey Game",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    {
+      "src": "https://pets.io.vn/src/logo/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://pets.io.vn/src/logo/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
