@@ -22,13 +22,13 @@
     // Thực hiện kiểm tra ngay khi script chạy
     if (!isRunningStandalone()) {
         // Nếu phát hiện KHÔNG PHẢI APP (đang chạy trên trình duyệt)
-        console.warn("Truy cập trái phép từ trình duyệt. Đang chuyển hướng về trang cài đặt...");
+        // console.warn("Truy cập trái phép từ trình duyệt. Đang chuyển hướng về trang cài đặt...");
         
         // Dùng replace() để thay thế lịch sử duyệt web 
         // (Người dùng bấm nút Back sẽ không quay lại được trang game này nữa)
         window.location.replace("index.php");
     } else {
-        console.log("Chế độ App đã được kích hoạt. Chúc mừng bạn!");
+        // console.log("Chế độ App đã được kích hoạt. Chúc mừng bạn!");
     }
 
 })();

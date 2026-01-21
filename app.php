@@ -18,16 +18,19 @@ session_start();
     <!--Liên kết các css-->
     <link rel="stylesheet" href="config/screen.css">
     <link rel="stylesheet" href="config/touch.css">
+    <link rel="stylesheet" href="config/text.css">
+    <!--Icon and another -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="shortcut icon" href="https://pets.io.vn/src/logo/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://pets.io.vn/src/logo/logo.jpg" type="image/x-icon">
 </head>
 
 <body>
 
     <div id="rotate-warning">
         <i class="fas fa-mobile-alt"></i>
-        <h2>Xoay ngang thiết bị!</h2>
-        <p>Trò chơi chỉ hỗ trợ màn hình ngang</p>
+        Xoay thiết bị!
+        <br>
+        Trò chơi hỗ trợ tốt ở màn hình ngang.
     </div>
 
     <div id="game-container">
@@ -55,6 +58,7 @@ session_start();
     <!--Liên kết các mô đun-->
     <script src="config/screen.js"></script>
     <script src="config/touch.js"></script>
+    <script src="config/fixed_keyboard.js>"></script>
 </body>
 
 </html>

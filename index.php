@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Pets Journey | Cài đặt</title>
-    <link rel="shortcut icon" href="https://pets.io.vn/src/logo/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://pets.io.vn/src/logo/logo.jpg" type="image/x-icon">
     <link rel="manifest" href="manifest.json">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -174,10 +174,10 @@
     <div class="bg-pattern"></div>
 
     <div class="container">
-        <img src="src/logo/logo.png" alt="Pets Journey" class="logo">
+        <img src="src/logo/logo.jpg" alt="Pets Journey" class="logo">
         
         <h1>Pets Journey</h1>
-        <p id="sub-text">Hãy dùng ít phút để cài đặt cho trải nghiệm tối ưu hơn!</p>
+        <p id="sub-text">Ít phút để cài đặt cho trải nghiệm tối ưu hơn!</p>
 
         <div id="ios-guide" class="guide-box">
             <div class="guide-step">

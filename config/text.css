@@ -1,0 +1,99 @@
+/* Import Font Nunito từ Google */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+/* * CẤU HÌNH TYPOGRAPHY (CHO ĐỘ PHÂN GIẢI 2796 x 1290)
+ * Logic: Container co dãn -> Chữ (px) cũng tự co dãn theo.
+ */
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Thiết lập cỡ chữ gốc cho toàn bộ Game Container */
+#game-container {
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff; /* Màu chữ mặc định: Trắng */
+    
+    /* * Size gốc: 40px
+     * Giải thích: Trên màn hình điện thoại (scale ~0.3), 
+     * 40px sẽ hiển thị tương đương 12-14px mắt thường nhìn thấy.
+     */
+    font-size: 42px; 
+    line-height: 1.5;
+    
+    /* Đổ bóng nhẹ giúp chữ nổi bật trên mọi hình nền */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+/* --- CÁC CẤP ĐỘ TIÊU ĐỀ (HEADING) --- */
+
+/* H1: Dùng cho Tiêu đề Game, Victory, Game Over */
+h1, .text-h1 {
+    font-size: 130px; /* Rất to */
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+    /* Hiệu ứng chữ vàng cam (Gradient) */
+    background: linear-gradient(to bottom, #fff200, #ff7f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Bóng đổ cứng tạo khối (Stroke giả) */
+    filter: drop-shadow(4px 4px 0px #b33939);
+}
+
+/* H2: Dùng cho Tiêu đề bảng (Đăng nhập, Túi đồ...) */
+h2, .text-h2 {
+    font-size: 90px;
+    font-weight: 800;
+    margin: 0 0 20px 0;
+    color: #f1f2f6;
+    text-shadow: 3px 3px 0 #2f3542;
+}
+
+/* H3: Dùng cho Tên vật phẩm, Tên NPC */
+h3, .text-h3 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    color: #7bed9f; /* Xanh lá nhạt */
+}
+
+/* --- NỘI DUNG (BODY) --- */
+
+/* P: Dùng cho hội thoại, mô tả */
+p, .text-body {
+    font-size: 45px; /* Đọc rõ ràng */
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Small: Dùng cho chú thích nhỏ, version */
+small, .text-sm {
+    font-size: 30px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/* --- TIỆN ÍCH KHÁC --- */
+
+/* Chữ trong nút bấm */
+.btn-text {
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Chữ báo lỗi (Màu đỏ) */
+.text-error {
+    color: #ff6b6b;
+    font-weight: 700;
+}
+
+/* Chữ thành công (Màu xanh) */
+.text-success {
+    color: #2ed573;
+    font-weight: 700;
+}
